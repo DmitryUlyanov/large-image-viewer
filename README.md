@@ -11,6 +11,8 @@ This is web-based image viewer with a support of arbitrary large images. The ima
 
 # Usage
 
+Install `python`, `flask` and `skimage`.
+
 Start viewer with
 ```
 python viewer.py
