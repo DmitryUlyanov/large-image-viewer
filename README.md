@@ -18,7 +18,7 @@ Start viewer with
 python viewer.py
 ```
 
-Then open browser at `http://localhost:5123/` and select an image and wait until it is tiled.
+Then open browser at `http://localhost:5123/`, select an image and wait until it is tiled.
 
 # Known issues
 I sometimes experience some caching problems in Chromium: old image tiles are not completely replaced by the new ones. In this case [This post](https://superuser.com/a/406331) helped me.
