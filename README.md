@@ -3,8 +3,8 @@ This is web-based image viewer with a support of arbitrary large images. The ima
 
 <table>
     <tr>
-        <td>![](screenshots/1.png)</td>
-        <td>![](screenshots/2.png)</td>
+        <td><img src="screenshots/1.png"></td>
+        <td><img src="screenshots/2.png"></td>
     </tr>
 </table>
 
