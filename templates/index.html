@@ -52,7 +52,7 @@
 // ]]></script>
 
   </head>
-  <body id="map">
+  <body id="map" style="overflow: hidden;">
     <form action="." method="POST">
         <input type="text" value="{{ form_text }}" name="image_path" placeholder="Path to image">
         <input type="submit" name="submit_image_path" value="Submit" onclick="loading();">
@@ -68,12 +68,13 @@
 
       var map = po.map()
         .container(document.getElementById("map").appendChild(po.svg("svg")))
-        .zoomRange([15, 22])
-        .zoom(17)
+        .zoomRange([{{ MIN_SIZE }} - 2, {{ MAX_SIZE }} + 2 ])
+        .zoom({{ ZOOM }})
         .add(po.image().url('{{ POLYMAP_PATH }}/zoom{Z}/{X}-{Y}.png'))
         .add(po.interact())
-        .add(po.compass().pan("none"))
-        .center({lat: 85.051, lon: -179.995});
+        .add(po.compass().pan("none"));
+      map.center(map.coordinateLocation({ column: 0, row: 0, zoom: {{ ZOOM }} }));
+      window.map = map;
 
     </script>
   </body>

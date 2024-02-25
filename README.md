@@ -11,7 +11,7 @@ This is web-based image viewer with a support of arbitrary large images. The ima
 
 # Usage
 
-Install `python`, `flask` and `skimage`.
+Install `python3`, `flask`, `gevent`, `numpy` and `opencv-python`. (Or use `pip install -r requirements.txt`)
 
 Start viewer with
 ```
@@ -20,8 +20,6 @@ python viewer.py
 
 Then open browser at `http://localhost:5123/`, select an image and wait until it is tiled.
 
-# Known issues
-I sometimes experience some caching problems in Chromium: old image tiles are not completely replaced by the new ones. In this case [This post](https://superuser.com/a/406331) helped me.
 
 # References
 [Kaggle plankton visualization](https://github.com/ebenolson/kaggle-ndsb-visualization)
