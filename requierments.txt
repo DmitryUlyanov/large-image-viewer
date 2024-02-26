@@ -1,0 +1,4 @@
+flask
+numpy
+gevent
+opencv-python
